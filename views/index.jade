@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  br
+  for item in messages
+    p= item.user + " says "
+    p= item.text
+    p= "Date: " + item.added
+    br
+  
